@@ -18,12 +18,8 @@ class Car
     Car.all.map { |car| car }
   end
 
-  def self.get_cars
-    Car.all.map { |car| car }
-  end
-
   def self.get_types
-    get_cars.map { |car| car.type }
+    list.map { |car| car.type }
   end
 
   # def self.get_mechanic(car_type)
